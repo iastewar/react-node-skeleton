@@ -27,6 +27,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+It will also copy the web.config to the build server so that it is ready for Azure Web App deployment. You can now
+deploy through vscode with the Azure extension.
+
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
