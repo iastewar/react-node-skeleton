@@ -1,4 +1,4 @@
-# React test
+# React Node Skeleton
 
 ## Setup
 
