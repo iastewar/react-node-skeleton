@@ -3,6 +3,8 @@
 
 # production
 /build
+/public
+/logs
 
 # misc
 .DS_Store

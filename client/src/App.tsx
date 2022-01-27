@@ -62,7 +62,7 @@ const About = () => {
   return (
     <>
       <div>About</div>
-      <Button as={Link as any} to="/about">
+      <Button as={Link as any} to="/">
         Go to Home
       </Button>
     </>
