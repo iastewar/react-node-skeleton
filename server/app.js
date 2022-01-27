@@ -6,7 +6,7 @@ const port = process.env.PORT || 5000
 app.use(express.static(path.join(__dirname, "build")));
 
 app.get('/test', (req, res) => {
-  res.send('Hello World!')
+  res.json({test: "hi"})
 })
 
 app.use((req, res, next) => {
