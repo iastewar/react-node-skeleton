@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReactECharts from 'echarts-for-react';
 
+const getTest = async () => {
+  const res = await fetch('/test');
+  return await res.text();
+}
+
 function App() {
+  useEffect(() => {
+    getTest().then(text => console.log(text))
+  }, [])
+
   const option = {
     xAxis: {
       data: ['2017-10-24', '2017-10-25', '2017-10-26', '2017-10-27']
@@ -24,7 +33,7 @@ function App() {
 
   return (
    <div className='main-container'>
-     <ReactECharts option={option}></ReactECharts>
+     <ReactECharts option={option} style={{ height: "500px", width: "500px" }}></ReactECharts>
    </div>
   );
 }
